@@ -37,7 +37,7 @@ def longest_run(mylist, key):
             print("----------")
             if size > max_size:
                 max_size = size
-                   ## print(size, "size on run")
+                print(size, "size on run")
                 print(max_size, "max size")
         else:
 
@@ -70,13 +70,9 @@ def longest_run_recursive(mylist, key):
 
 ## Feel free to add your own tests here.
 def test_longest_run():
-    ##if longest_run([2,12,12,8,12,12,12,0,12,1], 12) == 3:
-        ##print("Test one complete")
-    if longest_run([12, 12, 12, 8, 12, 12, 0, 12, 12, 12, 12], 12) == 4:
-        print("Test two complete")
-    ##assert longest_run([2,12,12,8,12,12,12,0,12,1], 12) == 3
-    ##assert longest_run([12, 12, 12, 8, 12, 12, 0, 12, 12, 12, 12], 12) == 4
+
+    assert longest_run([2,12,12,8,12,12,12,0,12,1], 12) == 3
+    assert longest_run([12, 12, 12, 8, 12, 12, 0, 12, 12, 12, 12], 12) == 4
 
 
-test_longest_run()
 
