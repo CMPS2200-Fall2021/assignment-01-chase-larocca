@@ -6,10 +6,48 @@ See assignment-01.pdf for details.
 
 def foo(x):
     ### TODO
-    pass
+    if x<=1:
+        return x
+    else:
+        ra = (foo(x-1))
+        rb = (foo(x-2))
+
+        return ra+rb
+
 
 def longest_run(mylist, key):
     ### TODO
+    prev = None
+    size = 0
+    max_size = 0
+    total_size = 0
+    listlen = len(mylist)
+    print("List Length: ", listlen)
+
+    for i in range(listlen):
+        print(prev, "prev b4 if")
+        print(total_size)
+        print(i)
+        if key == prev:
+            print("----------")
+           ## print("key == prev")
+            print(key, "KEY == ", prev, "PREV" )
+            size += 1
+            print("Size: ", size)
+            print("----------")
+            if size > max_size:
+                max_size = size
+                print(size, "size on run")
+                print(max_size, "max size")
+        else:
+
+            size = 0
+        if i < listlen-2:
+            prev = mylist[i+1]
+        total_size += 1
+
+    return max_size
+
     pass
 
 
@@ -32,6 +70,9 @@ def longest_run_recursive(mylist, key):
 
 ## Feel free to add your own tests here.
 def test_longest_run():
+
     assert longest_run([2,12,12,8,12,12,12,0,12,1], 12) == 3
+    assert longest_run([12, 12, 12, 8, 12, 12, 0, 12, 12, 12, 12], 12) == 4
+
 
 
