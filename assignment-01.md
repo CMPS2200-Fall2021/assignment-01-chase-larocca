@@ -12,38 +12,19 @@ In this assignment, you will learn more about asymptotic notation, parallelism, 
 1. **Asymptotic notation**
 
   - 1a. Is $2^{n+1} \in O(2^n)$? Why or why not? 
-.  
-.  
-.  
-.  
-. 
-  - 1b. Is $2^{2^n} \in O(2^n)$? Why or why not?     
-.  
-.  
-.  
-.  
-.  
-  - 1c. Is $n^{1.01} \in O(\mathrm{log}^2 n)$?    
-.  
-.  
-.  
-.  
+    
 
+  - 1b. Is $2^{2^n} \in O(2^n)$? Why or why not?     
+       Answer: No, because the simplified value of 2(n) is a contradiction.
+ 
+  - 1c. Is $n^{1.01} \in O(\mathrm{log}^2 n)$?    
+       Answer: No 
   - 1d. Is $n^{1.01} \in \Omega(\mathrm{log}^2 n)$?  
-.  
-.  
-.  
-.  
+       Answer: Yes  
   - 1e. Is $\sqrt{n} \in O((\mathrm{log} n)^3)$?  
-.  
-.  
-.  
-.  
+       Answer:  Yes
   - 1f. Is $\sqrt{n} \in \Omega((\mathrm{log} n)^3)$?  
-.  
-.  
-.  
-.  
+       Answer: No
 
   - 1g. Consider the definition of "Little o" notation:
   
@@ -87,12 +68,9 @@ $$
 
   - 2b. What does this function do, in your own words?  
 
-.  
-.  
-.  
-.  
-.  
-.  
+    ANSWER: The function takes in a number checks to see if it is less than or equal to 1
+            if it isn't the function is again ran in two variable recursively until the original
+            value is less than or equal to one then adds the two new values.
   
 
 
